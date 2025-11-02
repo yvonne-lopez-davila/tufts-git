@@ -1,0 +1,8 @@
+#!/bin/bash
+cat Header > Paper
+echo " " >> Paper
+for f in Team-*/*; do
+    cat ${f} >> Paper
+    echo " " >> Paper
+done
+cat Trailer >> Paper
